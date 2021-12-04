@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
-// import {
-//     NavBar,
-//     Portfolio,
-//     Contact,
-//     Footer
-// } from '../index';
+import {default as developerDesign} from "../../images/developerdesign.svg"
+import {default as responsiveDesign} from "../../images/responsivedesign.svg"
+import {default as innovativeSolutions} from "../../images/innovativesolutions.svg"
+import {default as passion} from "../../images/passion.svg"
 
 const Main = () => {
     return (
@@ -65,8 +62,7 @@ const Main = () => {
                                 <div className="col-sm-8 col-md-8">
                                     <h2>Statistics</h2>
                                     <h5><em>And for those that don't fancy reading:</em></h5>
-                                    {/* </br> */}
-
+                                    <br></br>
                                     <p>Male, 200 years old.</p>
                                     <p>Five feet 110 inches</p>
                                     <p>Favorite fonts:Roboto </p>
@@ -92,9 +88,7 @@ const Main = () => {
                         <div className="development-summary">
                             <div className="col-sm-1 col-md-1">
                                 <div className="development-img">
-                                    {/* <img className="img-responsive" src="./images/developerdesign.svg" /> */}
-                                    <img className="img-responsive" src="../../images/developerdesign.png" />
-
+                                    <img className="img-responsive" src={developerDesign} />
                                 </div>
                             </div>
 
@@ -109,7 +103,7 @@ const Main = () => {
                         <div className="responsive-summary">
                             <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
                                 <div className="responsive-img">
-                                    <img className="img-responsive" src="../../images/responsivedesign.png" />
+                                    <img className="img-responsive" src={responsiveDesign} />
                                 </div>
                             </div>
 
@@ -126,7 +120,7 @@ const Main = () => {
                         <div className="ideas-summary">
                             <div className="col-sm-1 col-md-1">
                                 <div className="idea-img">
-                                    <img className="img-responsive" src="../../images/innovativesolutions.png" />
+                                    <img className="img-responsive" src={innovativeSolutions} />
                                 </div>
                             </div>
 
@@ -140,7 +134,7 @@ const Main = () => {
 
                         <div className="passion-summary">
                             <div className="col-sm-1 col-md-1 col-sm-offset-2 col-md-offset-2">
-                                <img className="img-responsive" src="../../images/passion.png" />
+                                <img className="img-responsive" src={passion} />
                             </div>
 
                             <div className="col-sm-4 col-md-4">

@@ -2,23 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /* Navigation */
 .navigation {
   position: absolute;
   width: 100%;
   padding: 10px 0px;
   background: linear-gradient(rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.1));
-}
-
-.navigation .row {
-  display: flex;
-  justify-content: space-between;
 }
 
 .logo img {
@@ -42,7 +31,6 @@ html {
   -o-transition: border 50ms linear;
   -ms-transition: border 50ms linear;
   transition: border 50ms linear;
-  text-decoration: none;
 }
 .primary-nav a:hover {
   text-decoration: none;
@@ -59,19 +47,6 @@ html {
   background-attachment: fixed;
   padding: 14.7% 0; /* Center contents within the container, make background image cover*/
   color: white;
-}
-/* 
-.main .container-fluid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.about-general-description, .statistic-row{
-  display: flex;
-  justify-content: flex-start;
-  width: 80%;
-  padding-left: 300px;
 }
 
 .entry-banner h1 {
@@ -97,23 +72,11 @@ html {
   font-size: 16pt;
   border-radius: 0;
   border: 2px solid white;
-  text-decoration: none;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
   -ms-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
-}
-
-.text-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.banner-buttons {
-  display: flex;
-  flex-direction: row;
 }
 
 .banner-buttons .btn-border:hover,
@@ -246,12 +209,6 @@ html {
   background-position: center center;
 }
 
-/* .luvtalk-project {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url(./images/logo.svg);
-  background-position: center center;
-} */
-
 .personal-website-project {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./images/logo.svg);
@@ -262,28 +219,6 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./images/mlbproject.png);
   background-position: center center;
-}
-
-#project_card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.luvtalk-project, .luvtalk-project, .strike-zone-project, .personal-website-project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 35em;
-  height: 30em;
-  margin: 1em;
-  padding: 2em;
-}
-
-.luvtalk-project p, .luvtalk-project p, .strike-zone-project p, .personal-website-project p{
-  text-align: center;
 }
 
 .resume {

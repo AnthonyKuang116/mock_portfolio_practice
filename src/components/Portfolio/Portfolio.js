@@ -1,6 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { projects } from "../../bootstrap/js/index";
 
 const Portfolio = () => {
+    useEffect(() => {
+        projects();
+    }, [])
+
     return (
         <div className="projects">
             <div className="container-fluid">
@@ -20,9 +25,9 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <div className="row" id="project_card">
+                <div className="row" id="card_container">
                     <div className="col-sm-4 col-md-4 text-center">
-                        <div className="luvtalk-project">
+                        <div className="luvtalk-project" id="project_card">
                             <h3>LUV TALK Website</h3>
                             <p>Website, created during my first internship, which utilized HTML, CSS, PHP, Ajax, Javascript/jQuery, and Wordpress. </p>
                             <div className="row">
@@ -36,7 +41,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="col-sm-4 col-md-4 text-center">
-                        <div className="personal-website-project">
+                        <div className="personal-website-project" id="project_card">
                             <h3>Personal Website</h3>
                             <p>Enjoyable side project that was created to experiment with more HTML and CSS, but also provided an outlet to showcase my abilities and interests.</p>
                             <div className="row">
@@ -50,7 +55,7 @@ const Portfolio = () => {
                     </div>
 
                     <div className="col-sm-4 col-md-4 text-center">
-                        <div className="strike-zone-project">
+                        <div className="strike-zone-project" id="project_card">
                             <h3>Strike Zone Analysis</h3>
                             <p>Data analytics project completed during my time at the Illinois Math and Science Academy which studied the baseball strike zone based on the state of the game.</p>
                             <div className="row">
